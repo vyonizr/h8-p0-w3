@@ -8,11 +8,11 @@ var input = [
 function dataHandling(identityNumber) {
     console.log("Nomor ID: " + input[identityNumber][0]);
     console.log("Nama Lengkap: " + input[identityNumber][1]);
-    console.log("TTL: " + input[identityNumber][3]);
+    console.log("TTL: " + input[identityNumber][2] + " " + input[identityNumber][3]);
     console.log("Hobi: " + input[identityNumber][4]);
     console.log("");
 }
 
-for(var i = 0; i <= (input.length - 1); i++) { // function dataHandling(i) will loop until the last input
+for(var i = 0; i <= input.length - 1; i++) { // function dataHandling(i) will loop until the last input
     dataHandling(i); 
 }
