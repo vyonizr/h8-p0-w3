@@ -24,7 +24,7 @@ function dataHandling2() {
   }
   console.log(bulan); // prints "Mei"
 
-  console.log(inputIndex3Split.sort(function(a, b){return b-a})); // 'sort' method contains a descending function
+  console.log(inputIndex3Split.sort(function(a, b){return Number(b) > Number(a)})); // 'sort' method contains a descending function
 
   inputIndex3Split = input[3].split("/"); // reassigns the value back into ["21", "05", "1989"]
   console.log(inputIndex3Split.join("-"));
@@ -33,3 +33,13 @@ function dataHandling2() {
 }
 
 dataHandling2(input);
+
+/**
+ * keluaran yang diharapkan (pada console)
+ *
+ * ["0001", "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro"]
+ * Mei
+ * ["1989", "21", "05"]
+ * 21-05-1989
+ * Roman Alamsyah
+ */
