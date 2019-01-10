@@ -1,12 +1,15 @@
 //input "hello world!"
 //output !dlrow olleh"
 
-var str = "hello world!"
-var reversed = "";
+function balikKata(input){
+  var reversed = "";
 
+  for (var i = input.length - 1; i >= 0; i--) {
+    reversed += input[i];
+  }
 
-for (i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+  return reversed;
 }
 
-console.log(reversed);
+
+console.log(balikKata("hello world!"));
